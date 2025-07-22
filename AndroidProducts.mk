@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_gts8uwifi.mk
+    $(LOCAL_DIR)/twrp_gts8uwifi.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_gts8uwifi-user \
-    omni_gts8uwifi-userdebug \
-    omni_gts8uwifi-eng
+    twrp_gts8uwifi-user \
+    twrp_gts8uwifi-userdebug \
+    twrp_gts8uwifi-eng

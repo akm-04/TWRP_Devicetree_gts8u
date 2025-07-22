@@ -5,6 +5,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-add_lunch_combo omni_gts8uwifi-user
-add_lunch_combo omni_gts8uwifi-userdebug
-add_lunch_combo omni_gts8uwifi-eng
+add_lunch_combo twrp_gts8uwifi-user
+add_lunch_combo twrp_gts8uwifi-userdebug
+add_lunch_combo twrp_gts8uwifi-eng
