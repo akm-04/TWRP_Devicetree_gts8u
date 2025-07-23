@@ -8,7 +8,4 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/twrp_gts8uwifi.mk
 
-COMMON_LUNCH_CHOICES := \
-    twrp_gts8uwifi-user \
-    twrp_gts8uwifi-userdebug \
-    twrp_gts8uwifi-eng
+COMMON_LUNCH_CHOICES := twrp_gts8uwifi-eng
