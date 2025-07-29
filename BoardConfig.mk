@@ -50,6 +50,7 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_CONFIG := gts8uwifi_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/gts8uwifi
+BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/bootimg.mk
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
