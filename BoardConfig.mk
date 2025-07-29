@@ -114,3 +114,4 @@ TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 TW_MAX_BRIGHTNESS := 610
 TW_DEFAULT_BRIGHTNESS := 230
 TW_FRAMERATE := 120
+TW_BACKUP_EXCLUSIONS := /data/fonts
