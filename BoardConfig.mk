@@ -86,6 +86,24 @@ TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
+# System as root
+BOARD_ROOT_EXTRA_FOLDERS := \
+	cache \
+	carrier \
+	data_mirror \
+	efs \
+	linkerconfig \
+	odm_dlkm \
+	oem \
+	optics \
+	postinstall \
+	prism \
+	second_stage_resources \
+	spu \
+	system_ext \
+	vendor_dlkm
+BOARD_SUPPRESS_SECURE_ERASE := true
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-08-01
 
