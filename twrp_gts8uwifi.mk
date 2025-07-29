@@ -9,6 +9,9 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+# Enable project quotas and casefolding for emulated storage without sdcardfs
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
@@ -22,6 +25,10 @@ PRODUCT_MODEL := SM-X900
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
+
+# Copy device-specific recovery root overlay (fstab, init scripts, etc.)
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,device/samsung/gts8uwifi/recovery/root,recovery/root)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="gts8uwifixx-user 12 SP2A.220305.013 X900XXU9DYE5 release-keys"
