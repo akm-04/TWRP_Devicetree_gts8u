@@ -152,6 +152,7 @@ TW_USE_TOOLBOX := true
 RECOVERY_TOUCHSCREEN_SWAP_XY := true
 RECOVERY_TOUCHSCREEN_FLIP_Y := true
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
+TW_CUSTOM_CPU_TEMP_PATH := /sys/class/thermal/thermal_zone50/temp
 TW_MAX_BRIGHTNESS := 610
 TW_DEFAULT_BRIGHTNESS := 230
 TW_FRAMERATE := 120
