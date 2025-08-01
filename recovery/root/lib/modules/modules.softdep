@@ -1,6 +1,6 @@
 # Soft dependencies extracted from modules themselves.
 softdep soc_sleep_stats pre: smem  cdsp-loader
-softdep msm_kgsl pre: arm_smmu nvmem_qfprom
+softdep msm_kgsl pre: qcom-arm-smmu-mod nvmem_qfprom
 softdep sec_qc_summary pre: sec_arm64_ap_context
 softdep sec_qc_summary pre: sec_qc_logger
 softdep qmi_helpers pre: qrtr
