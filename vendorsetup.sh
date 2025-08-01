@@ -5,4 +5,4 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-add_lunch_combo twrp_gts8uwifi-eng
+add_lunch_combo twrp_gts8u-eng

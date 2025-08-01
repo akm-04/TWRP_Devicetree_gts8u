@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/samsung/gts8uwifi
+DEVICE_PATH := device/samsung/gts8u
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true

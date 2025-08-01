@@ -6,6 +6,6 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_gts8uwifi.mk
+    $(LOCAL_DIR)/twrp_gts8u.mk
 
-COMMON_LUNCH_CHOICES := twrp_gts8uwifi-eng
+COMMON_LUNCH_CHOICES := twrp_gts8u-eng
