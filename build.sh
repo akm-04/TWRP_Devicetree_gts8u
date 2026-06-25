@@ -156,18 +156,25 @@ clone_clang() {
         read -p "Press ENTER to clone to this path, or Ctrl+C to abort and edit the script to configure correct cloning directory: "
         echo -e "${red}Cloning clang at $CLANG_DIR ...${nocol}"
         mkdir -p "$CLANG_DIR"
-
-        if ! wget --show-progress -O "$CLANG_DIR/${CLANG_VERSION}.tar.gz" "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/${CLANG_VERSION}.tar.gz"; then
+# ----------------------------------------------------
+# Link for cloning clang 20+
+#        if ! wget --show-progress -O "$CLANG_DIR/${CLANG_VERSION}.tar.gz" "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/${CLANG_VERSION}.tar.gz"; then
+#            echo "${red}Cloning failed! Aborting...${nocol}"
+#            exit 1
+#        fi
+# ------------------------------------------------------------------------------
+# Available clangs on this link 
+# clang-3289846/ clang-r399163b/ clang-r416183b/ clang-r416183b1/ clang-r416183c/ clang-r416183c1/ clang-r428724/ clang-r433403/
+        if ! wget --show-progress -O "$CLANG_DIR/${CLANG_VERSION}.tar.gz" "https://android.googlesource.com/platform//prebuilts/clang/host/linux-x86/+archive/1c1069109f294e9ffbdc1ff8541394ab4b5d941d/${CLANG_VERSION}.tar.gz"; then
             echo "${red}Cloning failed! Aborting...${nocol}"
             exit 1
         fi
-
         echo "${yellow}Cloning successful. Extracting the tar file...${nocol}"
         tar -xzf "$CLANG_DIR/${CLANG_VERSION}.tar.gz" -C "$CLANG_DIR"
         rm "$CLANG_DIR/${CLANG_VERSION}.tar.gz"
     fi
 
-    echo -e "${green}Correct Clang version is cloned and setup!${nocol}"
+    echo -e "${green}Correct Clang version is cloned and setup at $CLANG_DIR ..${nocol}"
 }
 
 clone_gas(){
